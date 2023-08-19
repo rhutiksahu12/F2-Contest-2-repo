@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SDMS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>STUDENT MANAGEMENT SYSTEM</h3>
+
+        <form onsubmit=handleSubmit() id="register" >
+            <div class="inputs" >
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="number" id="gpa" placeholder="GPA">
+                <input type="number" id="age" placeholder="AGE">
+                <input type="text" id="degree" placeholder="Degree">
+            </div>
+            <button>
+                Add Student
+            </button>
+        </form>
+
+
+        <section class="table-section">
+            <div>
+                <input type="search" placeholder="Search by name, email or degree" class="search-bar">
+            </div>
+
+            <table id="table">
+                <thead >
+                    <tr>
+                        <th class="t-id">ID</th>
+                        <th class="t-name">Student Name</th>
+                        <th class="t-email">Email</th>
+                        <th class="t-gpa">GPA</th>
+                        <th class="t-age">age</th>
+                        <th class="t-degree">Degree</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+
+            </table>
+        </section>
+    </div>
+    <script src="./index.js"> </script>
+</body>
+
+</html>
